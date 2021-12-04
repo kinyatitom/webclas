@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+header {
+	height: 100px;
+	background: #dbdbdb;
+	position: relative;
+	width: 100%;
+	z-index: 10;
+}
+#banner {
+	width: 100%;
+	height:50px;
+	position: fixed;
+	top: 50px;
+	background-image: url
+	background-size: cover;
+	no-repeat;
+}
+#content {
+	width: 100%;
+	position: relative;
+	top: 400px;
+	background: #ebebeb;
+	height: 1500px;
+}
+{
+   padding: 0;
+   margin: 0;
+}
+ 
+body {
+   text-align: center;
+}
+ul li {
+    float: center;
+    list-style: none;
+    margin-right: 1em; 
+}
+ 
+li a {
+    color: #544738;
+    text-decoration: none;
+    float: left;
+    font-size: 25px;
+    padding: 12px;
+}
+ 
+li a:hover {
+    color: #7eb9be;
+}
+</style>
+</head>
+<body>
+
+<h3>Contact Form</h3>
+
+
+<div class="container">
+  <form action="/action_page.php"></form>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+     <label for="contact">phone</label>
+    <input type="number" id="phonenumber" name="phonenumber" placeholder="Your phone number..">
+    <br/>
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+<input type="file" id="myFile">
+<script>
+function myFunction() {
+  var x = document.getElementById("myFile");
+  x.disabled = true;
+}
+</script>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
