@@ -47,9 +47,8 @@ header {
 	height:50px;
 	position: fixed;
 	top: 50px;
-	background-image: url
-	background-size: cover;
-	no-repeat;
+	
+	
 }
 #content {
 	width: 100%;
@@ -58,7 +57,7 @@ header {
 	background: #ebebeb;
 	height: 1500px;
 }
-{
+.class{
    padding: 0;
    margin: 0;
 }
@@ -103,15 +102,27 @@ li a:hover {
     <label for="subject">Subject</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 <input type="file" id="myFile">
-<script>
-function myFunction() {
-  var x = document.getElementById("myFile");
-  x.disabled = true;
-}
-</script>
-    <input type="submit" value="Submit">
+
+    <input type="submit" value="Submit" id="submit">
   </form>
 </div>
+<script>
 
+  var fname = document.getElementById("fname");
+  var lname = document.getElementById("lname");
+  var phonenumber = document.getElementById("phonenumber");
+  var subject = document.getElementById("subject");
+  var myFile = document.getElementById("myFile");
+  var submit = document.getElementById("submit");
+ var mystring=fname.value + " "+ lname.value + " " + phonenumber.value + " " + subjet.value + " ";
+if(myfile.value==null){
+  mystring += "no file selected ";
+}else {
+  mystring += " file selected ";
+}
+submit.onclick=function (params) {
+  alert("hi")
+}
+</script>
 </body>
 </html>
